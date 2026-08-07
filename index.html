@@ -67,10 +67,10 @@
       <div class="container">
         <div class="section-heading"><p class="eyebrow">Services</p><h2>対応可能な業務</h2><p>医療・生命科学分野のデータを対象として、解析設計からPython実装、検証、可視化、レポート作成まで対応します。</p></div>
         <div class="grid grid-2">
-          <article class="card"><span class="service-number">01</span><h3>医療・研究データ解析</h3><ul><li>探索的データ解析と記述統計</li><li>群間比較、回帰分析、可視化</li><li>欠損データ処理と感度分析</li><li>医学的・統計的な結果解釈</li></ul></article>
-          <article class="card"><span class="service-number">02</span><h3>統計モデリング</h3><ul><li>線形・ロジスティック回帰</li><li>ベイズ統計と階層モデル</li><li>生存時間解析と分位点回帰</li><li>複雑標本データ解析</li></ul></article>
-          <article class="card"><span class="service-number">03</span><h3>機械学習・予測モデル</h3><ul><li>分類・回帰モデルと交差検証</li><li>クラス不均衡への対応</li><li>ROC、PR、Calibration、DCA</li><li>SHAP、Permutation Importance</li></ul></article>
-          <article class="card"><span class="service-number">04</span><h3>Pythonコードと成果物</h3><ul><li>再利用可能な関数・パッケージ</li><li>Jupyter Notebookと解析スクリプト</li><li>pytestとGitHub Actions</li><li>日本語・英語の技術レポート</li></ul></article>
+          <article class="card"><span class="service-number">01</span><h3>医療・研究データ解析</h3><ul><li>探索的データ解析と記述統計</li><li>群間比較、回帰分析、可視化</li><li>欠損データ処理とMICE型多重代入</li><li>医学的・統計的な結果解釈</li></ul></article>
+          <article class="card"><span class="service-number">02</span><h3>統計モデリング</h3><ul><li>線形・ロジスティック回帰</li><li>事前感度分析や事後予測チェックを含むMCMCベイズ統計ワークフロー</li><li>階層ベイズモデリング</li><li>複雑標本デザインを考慮した解析</li><li>Elastic Netなどの正則化回帰による変数選択</li><li>調査加重Gaussian GLM</li><li>単変量・多変量分位点回帰</li></ul></article>
+          <article class="card"><span class="service-number">03</span><h3>機械学習・多変量解析</h3><ul><li>分類・回帰モデルと交差検証</li><li>主成分分析とクラスタリング</li><li>PyCaretによるAutoML・モデル比較</li><li>Optunaによるハイパーパラメータ最適化</li><li>ROC、Precision-Recall、Calibration、Decision Curve Analysis</li><li>SHAPによるモデル解釈</li></ul></article>
+          <article class="card"><span class="service-number">04</span><h3>Pythonコードと成果物</h3><ul><li>再現可能なPython成果物</li><li>再利用可能な関数とPythonパッケージ</li><li>Jupyter Notebookと実行スクリプト</li><li>pytestによる単体テスト</li><li>Black・Flake8によるコード品質管理</li><li>GitHub Actionsによる継続的インテグレーション</li><li>日本語・英語の技術レポート</li></ul></article>
         </div>
       </div>
     </section>
@@ -79,10 +79,10 @@
       <div class="container">
         <div class="section-heading"><p class="eyebrow">Featured Projects</p><h2>主要な医療統計プロジェクト</h2><p>解析手法だけでなく、再現性、コード品質、文書化まで含めてGitHub上で確認できる形に整理しています。</p></div>
         <div class="grid grid-2">
-          <article class="card project-card"><p class="project-label">Complex Survey Analysis</p><h3>NHANES Liver Fibrosis Analysis</h3><p>NHANESデータを使用し、複雑標本デザインと欠損データを考慮して、肝線維化スコアと血液生化学指標の関連を解析しました。</p><p class="methods">MICE-style multiple imputation · Elastic Net · survey-weighted GLM · Rubin's rules · quantile regression</p><div class="project-actions"><a class="text-link" href="https://github.com/Makoto-space/statistical-analysis-using-CDC-blood-biochemical-markers">View Repository →</a></div></article>
-          <article class="card project-card"><p class="project-label">Bayesian Oncology</p><h3>Bayesian Thyroid Cancer Recurrence Analysis</h3><p>階層ベイズロジスティック回帰を用いて、甲状腺がんの再発リスク因子と予測性能を評価しました。</p><p class="methods">PyMC · hierarchical modeling · MCMC diagnostics · LOO comparison · calibration</p><div class="project-actions"><a class="text-link" href="https://github.com/Makoto-space/bayesian-thyroid-cancer-recurrence-risk">View Repository →</a></div></article>
           <article class="card project-card"><p class="project-label">Rare-Event Modeling</p><h3>Bayesian Dialysis Risk Analysis</h3><p>透析移行例が少ない不均衡データを対象として、ベイズロジスティック回帰によるリスク推定を行いました。</p><p class="methods">prior specification · MCMC · stratified cross-validation · ROC-AUC · calibration · decision curve analysis</p><div class="project-actions"><a class="text-link" href="https://github.com/Makoto-space/bayesian-dialysis-risk">View Repository →</a></div></article>
-          <article class="card project-card"><p class="project-label">Machine Learning</p><h3>Liver Disease Risk Modeling</h3><p>医療データを対象として、分類モデル、PCA、クラスタリング、モデル説明、再現可能なパイプラインを実装しました。</p><p class="methods">Extra Trees · preprocessing pipelines · PCA · K-means · SHAP · pytest</p><div class="project-actions"><a class="text-link" href="https://github.com/Makoto-space/liver-disease-risk">View Repository →</a></div></article>
+          <article class="card project-card"><p class="project-label">Bayesian Oncology</p><h3>Bayesian Thyroid Cancer Recurrence Analysis</h3><p>階層ベイズロジスティック回帰を用いて、甲状腺がんの再発リスク因子と予測性能を評価しました。</p><p class="methods">PyMC · hierarchical modeling · MCMC diagnostics · LOO comparison · calibration</p><div class="project-actions"><a class="text-link" href="https://github.com/Makoto-space/bayesian-thyroid-cancer-recurrence-risk">View Repository →</a></div></article>
+          <article class="card project-card"><p class="project-label">Machine Learning</p><h3>Liver Disease Risk Modeling</h3><p>血液検査データを用いて肝疾患予測モデルを構築し、潜在的な生化学パターンを探索しました。</p><p class="methods">Extra Trees · preprocessing pipelines · PCA · K-means · SHAP · pytest</p><div class="project-actions"><a class="text-link" href="https://github.com/Makoto-space/liver-disease-risk">View Repository →</a></div></article>
+          <article class="card project-card"><p class="project-label">Complex Survey Analysis</p><h3>NHANES Liver Fibrosis Analysis</h3><p>NHANES公開データを用いて、複雑標本デザインと欠損データを考慮して、肝線維化スコアと血液生化学指標の関連を解析しました。</p><p class="methods">MICE-style multiple imputation · Elastic Net · survey-weighted GLM · Rubin's rules · quantile regression</p><div class="project-actions"><a class="text-link" href="https://github.com/Makoto-space/statistical-analysis-using-CDC-blood-biochemical-markers">View Repository →</a></div></article>
         </div>
       </div>
     </section>
