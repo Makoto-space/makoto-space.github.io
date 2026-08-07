@@ -56,7 +56,7 @@
         <p class="eyebrow">Medical Data Science Portfolio</p>
         <h1>Makoto Komori, Ph.D.</h1>
         <p class="hero-role">Freelance Medical Data Scientist</p>
-        <p class="hero-description">Pythonによる医療・公衆衛生データの統計解析、ベイズモデリング、予測モデル構築、再現可能な解析コードおよび技術文書の作成に取り組んでいます。</p>
+        <p class="hero-description">Pythonによる医療・公衆衛生データの統計解析、ベイズモデリング、機械学習、予測モデル構築、再現可能な解析コードおよび技術文書の作成に取り組んでいます。</p>
         <p class="availability-note">現在、新規の業務相談・ご依頼はランサーズ経由のみ受け付けています。</p>
         <div class="keyword-row"><span class="keyword">Python</span><span class="keyword">Biostatistics</span><span class="keyword">Bayesian Modeling</span><span class="keyword">Medical Data Analysis</span><span class="keyword">Reproducible Research</span></div>
         <div class="actions"><a class="button" href="#projects">View Projects</a><a class="button button-secondary" href="https://github.com/Makoto-space">GitHub Profile</a></div>
@@ -79,10 +79,10 @@
       <div class="container">
         <div class="section-heading"><p class="eyebrow">Featured Projects</p><h2>主要な医療統計プロジェクト</h2><p>解析手法だけでなく、再現性、コード品質、文書化まで含めてGitHub上で確認できる形に整理しています。</p></div>
         <div class="grid grid-2">
-          <article class="card project-card"><p class="project-label">Rare-Event Modeling</p><h3>Bayesian Dialysis Risk Analysis</h3><p>透析移行例が少ない不均衡データを対象として、ベイズロジスティック回帰によるリスク推定を行いました。</p><p class="methods">prior specification · MCMC · stratified cross-validation · ROC-AUC · calibration · decision curve analysis</p><div class="project-actions"><a class="text-link" href="https://github.com/Makoto-space/bayesian-dialysis-risk">View Repository →</a></div></article>
-          <article class="card project-card"><p class="project-label">Bayesian Oncology</p><h3>Bayesian Thyroid Cancer Recurrence Analysis</h3><p>階層ベイズロジスティック回帰を用いて、甲状腺がんの再発リスク因子と予測性能を評価しました。</p><p class="methods">PyMC · hierarchical modeling · MCMC diagnostics · LOO comparison · calibration</p><div class="project-actions"><a class="text-link" href="https://github.com/Makoto-space/bayesian-thyroid-cancer-recurrence-risk">View Repository →</a></div></article>
-          <article class="card project-card"><p class="project-label">Machine Learning</p><h3>Liver Disease Risk Modeling</h3><p>血液検査データを用いて肝疾患予測モデルを構築し、潜在的な生化学パターンを探索しました。</p><p class="methods">Extra Trees · preprocessing pipelines · PCA · K-means · SHAP · pytest</p><div class="project-actions"><a class="text-link" href="https://github.com/Makoto-space/liver-disease-risk">View Repository →</a></div></article>
-          <article class="card project-card"><p class="project-label">Complex Survey Analysis</p><h3>NHANES Liver Fibrosis Analysis</h3><p>NHANES公開データを用いて、複雑標本デザインと欠損データを考慮して、肝線維化スコアと血液生化学指標の関連を解析しました。</p><p class="methods">MICE-style multiple imputation · Elastic Net · survey-weighted GLM · Rubin's rules · quantile regression</p><div class="project-actions"><a class="text-link" href="https://github.com/Makoto-space/statistical-analysis-using-CDC-blood-biochemical-markers">View Repository →</a></div></article>
+          <article class="card project-card"><p class="project-label">Rare-Event Modeling</p><h3>Bayesian Dialysis Risk Analysis</h3><p>慢性腎疾患(CKD)患者の透析移行リスクをMCMCベイズロジスティック回帰で予測しました。</p><p class="methods">prior specification · MCMC · stratified cross-validation · ROC-AUC · calibration · decision curve analysis</p><div class="project-actions"><a class="text-link" href="https://github.com/Makoto-space/bayesian-dialysis-risk">View Repository →</a></div></article>
+          <article class="card project-card"><p class="project-label">Bayesian Oncology</p><h3>Bayesian Thyroid Cancer Recurrence Analysis</h3><p>甲状腺がん患者の再発リスクをMCMC階層ベイズロジスティック回帰で予測しました。</p><p class="methods">PyMC · hierarchical modeling · MCMC diagnostics · LOO comparison · posterior predictive checks</p><div class="project-actions"><a class="text-link" href="https://github.com/Makoto-space/bayesian-thyroid-cancer-recurrence-risk">View Repository →</a></div></article>
+          <article class="card project-card"><p class="project-label">Machine Learning</p><h3>Liver Disease Risk Modeling</h3><p>血液検査データから肝疾患を予測するモデルの構築、PCAやクラスタリングで潜在的な病態パターンの抽出を試みました。</p><p class="methods">PyCaret · Extra Trees · Optuna · PCA · K-Means clustering · SHAP</p><div class="project-actions"><a class="text-link" href="https://github.com/Makoto-space/liver-disease-risk">View Repository →</a></div></article>
+          <article class="card project-card"><p class="project-label">Complex Survey Analysis</p><h3>NHANES Liver Fibrosis Analysis</h3><p>NHANES公開データを統合し、複雑標本デザインと欠損データを考慮して、肝線維化スコアと血液生化学マーカーの関連を解析しました。</p><p class="methods">MICE-style multiple imputation · Elastic Net · survey-weighted Gaussian GLM · Rubin's rules · quantile regression</p><div class="project-actions"><a class="text-link" href="https://github.com/Makoto-space/statistical-analysis-using-CDC-blood-biochemical-markers">View Repository →</a></div></article>
         </div>
       </div>
     </section>
@@ -107,7 +107,8 @@
     <section id="publication">
       <div class="container">
         <div class="section-heading"><p class="eyebrow">Selected Publication</p><h2>代表論文</h2></div>
-        <article class="card publication"><p class="publication-title">「新規化学発光免疫測定装置を用いた胃がんリスク層別化検査と健常者血清ペプシノゲン値に関する検討」</p><p>『医学と薬学』77巻4号, 573–586, 2020. Japanese-language peer-reviewed article related to in vitro diagnostic testing.</p><!-- TODO: 出版社ページまたは論文情報ページのURLを追加してください。 --></article>
+        <article class="card publication"><p class="publication-title">「新規化学発光免疫測定装置を用いた胃がんリスク層別化検査と健常者血清ペプシノゲン値に関する検討」</p><p>『医学と薬学』77巻4号, 573–586, 2020. Japanese-language peer-reviewed article related to in vitro diagnostic testing.</p><p><a href="https://www.shizenkagakusha.co.jp/igakutoyakugaku/" target="_blank" rel="noopener noreferrer">「医学と薬学」出版社ページを見る</a></p></article>
+      　<article class="card publication"><p class="publication-title">"Measurement of microRNA with isothermal DNA amplification on fully automated immunoassay analyzers"</p><p><em>Analytical and Bioanalytical Chemistry</em> (2019), 411, 3789–3800. Peer-reviewed article on in vitro diagnostic measurement of microRNA using isothermal DNA amplification.</p><p><a href="https://doi.org/10.1007/s00216-019-01878-z">https://doi.org/10.1007/s00216-019-01878-z</a></p></article>
       </div>
     </section>
 
